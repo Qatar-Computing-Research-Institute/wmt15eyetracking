@@ -6,17 +6,19 @@ README.md: this file.
 
 Appraise
 =========
+https://github.com/Qatar-Computing-Research-Institute/iAppraise
 
 data
 =====
-
+exported-tasks-aabdelali-2014-11-25.ver4.xml
 
 results
 ========
+data-4+trans+seqs+transit+fixations.dat
 
 scripts
 ========
-
+python parse-v3+trans+seqs+transit+fixations.py exported-tasks-aabdelali-2014-11-25.ver4.xml > ../results/data-4+trans+seqs+transit+fixations.dat
 
 Related publications
 ====================
