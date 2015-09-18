@@ -1,0 +1,167 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Bates \bgroup et al.\egroup }2015]{LM4:2015}
+Douglas Bates, Martin Maechler, Benjamin~M. Bolker, and Steven Walker.
+\newblock 2015.
+\newblock Fitting linear mixed-effects models using {lme4}.
+\newblock {\em Journal of Statistical Software}, arXiv:1406.5823.
+
+\bibitem[\protect\citename{Bojar \bgroup et al.\egroup }2011]{Bojar2011}
+Ondrej Bojar, Milo{\v{s}} Ercegov{\v{c}}evi{\'{c}}, Martin Popel, and Omar
+  Zaidan.
+\newblock 2011.
+\newblock A grain of salt for the wmt manual evaluation.
+\newblock In {\em Proceedings of the Sixth Workshop on Statistical Machine
+  Translation}, Edinburgh, Scotland.
+
+\bibitem[\protect\citename{Callison-Burch \bgroup et al.\egroup
+  }2007]{callisonburch-EtAl:2007:WMT}
+Chris Callison-Burch, Cameron Fordyce, Philipp Koehn, Christof Monz, and Josh
+  Schroeder.
+\newblock 2007.
+\newblock ({M}eta-) {Evaluation of Machine Translation}.
+\newblock In {\em Proceedings of the Second Workshop on Statistical Machine
+  Translation}, Prague, Czech Republic.
+
+\bibitem[\protect\citename{Callison-Burch \bgroup et al.\egroup }2012]{WMT12}
+Chris Callison-Burch, Philipp Koehn, Christof Monz, Matt Post, Radu Soricut,
+  and Lucia Specia.
+\newblock 2012.
+\newblock Findings of the 2012 {W}orkshop on {S}tatistical {M}achine
+  {T}ranslation.
+\newblock In {\em Proceedings of the Seventh Workshop on Statistical Machine
+  Translation}, pages 10--51, Montr{\'e}al, Canada, June. Association for
+  Computational Linguistics.
+
+\bibitem[\protect\citename{Doherty and O'Brien}2014]{doherty2014assessing}
+Stephen Doherty and Sharon O'Brien.
+\newblock 2014.
+\newblock {Assessing the Usability of Raw Machine Translated Output: A
+  User-Centered Study Using Eye Tracking}.
+\newblock {\em International Journal of Human-Computer Interaction},
+  30(1):40--51.
+
+\bibitem[\protect\citename{Doherty \bgroup et al.\egroup }2010]{doherty2010eye}
+Stephen Doherty, Sharon O'Brien, and Michael Carl.
+\newblock 2010.
+\newblock {Eye Tracking as an {MT} Evaluation Technique}.
+\newblock {\em Machine translation}, 24(1):1--13.
+
+\bibitem[\protect\citename{Dorr \bgroup et al.\egroup }2011]{Dorr2011}
+Bonnie Dorr, Matthew Snover, and Nitin Madnani.
+\newblock 2011.
+\newblock Introduction.
+\newblock In Joseph Olive, Caitlin Christianson, and John McCary, editors, {\em
+  {Handbook of Natural Language Processing and Machine Translation}}, pages
+  745--758. Springer.
+
+\bibitem[\protect\citename{Federmann}2012]{federmann2012appraise}
+Christian Federmann.
+\newblock 2012.
+\newblock {Appraise: An Open-source Toolkit for Manual Evaluation of MT
+  Output}.
+\newblock {\em The Prague Bulletin of Mathematical Linguistics}, 98:25--35.
+
+\bibitem[\protect\citename{Guzm\'{a}n \bgroup et al.\egroup
+  }2014]{discoMT:acl2014}
+Francisco Guzm\'{a}n, Shafiq Joty, Llu\'{i}s M\`{a}rquez, and Preslav Nakov.
+\newblock 2014.
+\newblock Using discourse structure improves machine translation evaluation.
+\newblock In {\em Proceedings of 52nd Annual Meeting of the Association for
+  Computational Linguistics}, Baltimore, Maryland, USA.
+
+\bibitem[\protect\citename{Joty \bgroup et al.\egroup }2014]{discoMT:WMT2014}
+Shafiq Joty, Francisco Guzm\'{a}n, Llu\'{i}s M\`{a}rquez, and Preslav Nakov.
+\newblock 2014.
+\newblock Disco{TK}: Using discourse structure for machine translation
+  evaluation.
+\newblock In {\em Proceedings of the Ninth Workshop on Statistical Machine
+  Translation}, Baltimore, Maryland, USA.
+
+\bibitem[\protect\citename{Mishra \bgroup et al.\egroup
+  }2012]{mishra-carl-bhattacharyya:2012:ETNLP}
+Abhijit Mishra, Michael Carl, and Pushpak Bhattacharyya.
+\newblock 2012.
+\newblock {A Heuristic-Based Approach for Systematic Error Correction of Gaze
+  Data for Reading}.
+\newblock In {\em Proceedings of the First Workshop on Eye-tracking and Natural
+  Language Processing}, Mumbai, India.
+
+\bibitem[\protect\citename{Mitchell \bgroup et al.\egroup
+  }2013]{mitchell2013community}
+Linda Mitchell, Johann Roturier, and Sharon O'Brien.
+\newblock 2013.
+\newblock {Community-based Post-editing of Machine-translated Content:
+  Monolingual vs. Bilingual}.
+\newblock In {\em Proceedings of the Machine Translation Summit XIV}, Nice,
+  France.
+
+\bibitem[\protect\citename{{R Core Team}}2015]{R:2015}
+{R Core Team}, 2015.
+\newblock {\em R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria.
+
+\bibitem[\protect\citename{Sanders \bgroup et al.\egroup }2011]{Sanders2011}
+Gregory Sanders, Mark Przybocki, Nitin Madnani, and Matthew Snover.
+\newblock 2011.
+\newblock {Human Subjective Judgments}.
+\newblock In Joseph Olive, Caitlin Christianson, and John McCary, editors, {\em
+  {Handbook of Natural Language Processing and Machine Translation}}, pages
+  750--759. Springer.
+
+\bibitem[\protect\citename{Snover \bgroup et al.\egroup }2006]{Snover06astudy}
+Matthew Snover, Bonnie Dorr, Richard Schwartz, Linnea Micciulla, and John
+  Makhoul.
+\newblock 2006.
+\newblock {A Study of Translation Edit Rate with Targeted Human Annotation}.
+\newblock In {\em Proceedings of the 7th Biennial Conference of the Association
+  for Machine Translation in the Americas}, Cambridge, Massachusetts, USA.
+
+\bibitem[\protect\citename{Stymne \bgroup et al.\egroup }2012]{stymne2012eye}
+Sara Stymne, Henrik Danielsson, Sofia Bremin, Hongzhan Hu, Johanna Karlsson,
+  Anna~Prytz Lillkull, and Martin Wester.
+\newblock 2012.
+\newblock {Eye Tracking as a Tool for Machine Translation Error Analysis}.
+\newblock In {\em Proceedings of the International Conference on Language
+  Resources and Evaluation}, Istanbul, Turkey.
+
+\bibitem[\protect\citename{Turian \bgroup et al.\egroup }2003]{Turian2003}
+Joseph Turian, Luke Shen, and I.~Dan Melamed.
+\newblock 2003.
+\newblock {Evaluation of Machine Translation and its Evaluation}.
+\newblock In {\em Proceedings of Machine Translation Summit IX}, New Orleans,
+  LA, USA.
+
+\bibitem[\protect\citename{Vilar \bgroup et al.\egroup
+  }2007]{vilar-EtAl:2007:WMT}
+David Vilar, Gregor Leusch, Hermann Ney, and Rafael~E. Banchs.
+\newblock 2007.
+\newblock {Human Evaluation of Machine Translation Through Binary System
+  Comparisons}.
+\newblock In {\em Proceedings of the Second Workshop on Statistical Machine
+  Translation}, Prague, Czech Republic.
+
+\bibitem[\protect\citename{White \bgroup et al.\egroup
+  }1993]{white1993evaluation}
+John~S White, Theresa~A O'Connell, and Lynn~M Carlson.
+\newblock 1993.
+\newblock Evaluation of machine translation.
+\newblock In {\em Proceedings of the workshop on Human Language Technology},
+  Stroudsburg, PA, USA.
+
+\bibitem[\protect\citename{White \bgroup et al.\egroup }1994]{white1994}
+John White, Theresa O'Connell, and Francis O'Mara.
+\newblock 1994.
+\newblock {The {ARPA MT} Evaluation Methodologies: Evolution, Lessons, and
+  Future Approaches}.
+\newblock In {\em Proceedings of the Association for Machine Translation in the
+  Americas Conference}, Columbia, Maryland, USA.
+
+\bibitem[\protect\citename{Winter}2013]{DBLP:journals/corr/Winter13}
+Bodo Winter.
+\newblock 2013.
+\newblock Linear models and linear mixed effects models in {R} with linguistic
+  applications.
+\newblock arXiv:1308.5499.
+
+\end{thebibliography}

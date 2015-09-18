@@ -1,0 +1,43 @@
+%!TEX root = main.tex
+
+%There are several alternatives to perform human evaluation of Machine Translation. 
+Each year thousands of human judgments are used to evaluate the quality of Machine Translation (MT) systems to determine %and decide 
+which algorithms and techniques are to be considered the new state-of-the-art. 
+%\hassan{I did not like the second part of pervious sentence after "and decide". we may remove it.}
+In a typical scenario 
+%for human evaluation of Machine Translation (MT),
+ human judges evaluate a system's output (or \emph{hypothesis}) by comparing it to a source sentence and/or to a reference translation. Then, they score the hypothesis according to a set of defined criteria such as \emph{fluency} and \emph{adequacy} \cite{white1994}; or rank a set of hypotheses in order of preference \cite{vilar-EtAl:2007:WMT,callisonburch-EtAl:2007:WMT}.
+
+Evaluating MT output can be a challenging task for a number of reasons: it is tedious and therefore evaluators can lose interest quickly; it is complex, especially if the guidelines are not well defined; and evaluators can have difficulty distinguishing between different aspects of the translations \cite{callisonburch-EtAl:2007:WMT}. \\
+%Furthermore, it can be highly subjective as evaluators develop their own \emph{intrinsic} rules of thumb to evaluate translations. 
+As a result, evaluations suffer from low inter- and intra-annotator agreements \cite{Turian2003,Snover06astudy}. Yet, as \newcite{Sanders2011} argue, using human judgments is essential to the progress of MT because: \Ni automatic translations are produced for a human audience; and \Nii human understanding of the \emph{real} world allows to assess the importance of the errors made by MT systems.
+
+Most of the research in human evaluation has focused on analyzing the criteria to use for evaluation, and has regarded the evaluation process as a \emph{black-box}, where the inputs are different sources of information (i.e source text, reference translation, and translation hypotheses), and the output is a score (or preference ranking).
+
+In this paper, we focus on analyzing evaluation from a different perspective. First, we regard the process as a \emph{glass-box} and use \eye to monitor the times evaluators spend digesting different sources of information (\emph{scenarios}) before making a judgment. Secondly, we contrast how the availability of such sources can affect the outcome of the evaluation. Finally, we analyze how the background of the evaluators (in this case whether they are \emph{monolingual} or \emph{bilingual}) has an effect on the consistency and speed in which translations are evaluated. Our main research questions are:
+
+\begin{itemize}
+%\setlength{\itemindent}{-.1in}
+\item Given different \gamets, what source of information do evaluators use to evaluate a translation? Do they use the source text, the target text, or both? Does the availability of specific information changes the consistency of the evaluation?
+%\item Do they follow a specific order of areas of interest while evaluating? 
+%How long do they spend in each area? %and %\sout{in general} 
+%overall to give an evaluation score?
+%\sout{to a translation}?
+%\end{itemize}
+
+% OLD one:
+% \item Given the current layout, what kind of information do evaluators use to decide on the score of a translation.
+%-- Do they use the source information, the target information, or both?
+%-- For how long do they score?
+%-- Is there a specific order in which users evaluate?
+
+\item Are there differences of behavior between \emph{bilinguals} (i.e. evaluators fluent in both source and target languages) and \emph{monolinguals} (i.e. evaluators fluent only in the target language)?
+Which group is more consistent?
+
+%\item Are there differences in behavior when evaluating \emph{good} vs. \emph{bad} translations?
+
+\end{itemize}
+
+Our goal is to provide actionable insights that can help to improve the process of evaluation, especially in large-scale shared-tasks such as WMT. In the next sections we summarize related work, provide details of our experimental setup, and analyze and discuss the results of our experiment. 
+%The remainder of this paper is divided as follows: First, we give a survey for related work and then we detail the method used in setting our experiments followed by results. Finally, we provide discussions for our findings and a conclusion.
+

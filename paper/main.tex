@@ -1,0 +1,91 @@
+%!TEX root = main.tex
+
+
+\documentclass[11pt,a4paper]{article}
+\usepackage{acl2015}
+\usepackage{times}
+\usepackage{url}
+\usepackage{latexsym}
+\usepackage{tabularx}
+
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{rotating}
+
+\usepackage[normalem]{ulem}
+
+\input{defs}
+
+%\setlength\titlebox{5cm}
+
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+
+\title{How do Humans Evaluate Machine Translation}
+
+\author{Francisco Guzm\'an\hspace*{1.5mm}
+Ahmed Abdelali\hspace*{1.5mm}
+Irina Temnikova\hspace*{1.5mm}
+Hassan Sajjad\hspace*{1.5mm}
+\hbox{\rm and}\hspace*{1.5mm}Stephan Vogel\\
+ALT Research Group\\
+Qatar Computing Research Institute, HBKU\\
+%, Qatar Foundation\\
+{\tt\{fguzman,aabdelali,itemnikova,hsajjad,svogel\}@qf.org.qa}}
+
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+In this paper, we take a closer look at the MT evaluation process from a \emph{glass-box} perspective using \eye. We analyze two aspects of the evaluation task -- the background of evaluators (\emph{monolingual or bilingual}) and the sources of information available, and we evaluate them using time  and consistency as criteria. % the factor of time and consistency. 
+Our findings show that \monos are slower but more consistent than \bils, especially when only target language information is available. 
+When exposed to various sources of information, evaluators in general take more time and in the case of \monos, there is a drop in consistency.  Our findings suggest that to have consistent and cost effective MT evaluations, it is better to use \monos with only target language information.  
+
+\end{abstract}
+
+\section{Introduction}
+\input{intro}
+\vspace{5pt}
+\section{Related Work}
+\vspace{5pt}
+\input{related}
+
+\section{Method}
+\input{method}
+
+\section{Results}
+\input{results}
+
+\pagebreak
+\section{Discussion}
+\input{discussion}
+
+%\section*{Acknowledgments}
+\section{Conclusion}
+In this paper, we analyzed the process of MT evaluation from a \emph{glass-box} perspective, using \eye data. We contrasted two main aspects of the evaluation tasks: the background of the evaluators, and the sources of information available to them during the evaluation task.
+We used time and consistency as our main criteria for comparison. 
+Our results show that: 
+\Ni \mono evaluators take relatively longer to evaluate translations (except when only the target language information is available, then they complete the tasks in less time), yet they are more consistent in their judgements. 
+\Nii The amount of information provided to evaluators can affect their performance. We observed that when more information is available, the tasks take longer to complete, and yield less consistent results.  
+%\Niii We observed that \monos behave more consistently and complete the tasks in less time when only the target language information is available.  \stephan{This last observation is included in the previous.}
+
+%directly proportional to the total time spent on the evaluation task but is inversely proportional to the time spent to assimilate the translation itself. Evaluators’ background had an impact on the evaluation procss outcomes. Monolinguals showed more consistent and hence more reliable evaluation when contrasted with bilinguals. The ramification of the latter conclusion is important and more precisely on large evaluation campaigns where access to bilinguals might impede the process for either the availability or the cost. 
+
+%We analyzed the orthodox human evaluation process using \eye. We looked at three aspects: evaluation time, sources of information (scenarios) and evaluator background (\emph{monolingual or bilingual}). Our results showed that \bil takes relatively less time to evaluate compared to monolinguals. The amount of information provided to evaluators is directly proportional to the total time spent on the evaluation task but is inversely proportional to the time spent to assimilate the translation itself. Evaluators’ background had an impact on the evaluation procss outcomes. Monolinguals showed more consistent and hence more reliable evaluation when contrasted with bilinguals. 
+
+Therefore, based on our empirical results, we suggest that future evaluation campaigns be done with \mono evaluators in a \tgt \gamet. We argue that this setting can increase the consistency of results while reducing the potential costs of recruiting \bils. 
+%to The ramification of the latter conclusion is important and more precisely on large evaluation campaigns where access to bilinguals might impede the process for either the availability or the cost. 
+
+In future studies we would like to extend our explorations into using \eye to model the behavior of evaluators and to help predict reliable and unreliable translations.  In particular, we would like to explore the application of \eye in ranking scenarios. We believe that given the popularity and availability of \emph{low-cost} devices, \eye can position itself as a useful aid to reduce subjectivity in evaluation.%, making them more consistent. 
+
+%by adding useful information that would substitute explicit score with potential biases. 
+%The fixation can help to identify difficult and problematic regions of translation which could move 
+
+\pagebreak
+\bibliographystyle{acl}
+\bibliography{eyetracking}
+
+\end{document}

@@ -1,0 +1,112 @@
+\usepackage{xspace}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\newcommand{\Eye}{Eye-tracking\xspace}
+\newcommand{\eye}{eye-tracking\xspace}
+\newcommand{\mono}{\nobreak{\emph{monolingual}}\xspace}
+\newcommand{\bil}{\nobreak{\emph{bilingual}}\xspace}
+\newcommand{\monos}{\nobreak{\emph{monolinguals}}\xspace}
+\newcommand{\bils}{\nobreak{\emph{bilinguals}}\xspace}
+\newcommand{\src}{\nobreak{\emph{source-only}}\xspace}
+\newcommand{\srctgt}{\nobreak{\emph{source+target}}\xspace}
+\newcommand{\tgt}{\nobreak{\emph{target-only}}\xspace}
+\newcommand{\lshort}{\nobreak{\emph{short}}\xspace}
+\newcommand{\lmid}{\nobreak{\emph{medium}}\xspace}
+\newcommand{\llong}{\nobreak{\emph{long}}\xspace}
+\newcommand{\gamet}{\nobreak{\emph{scenario}}\xspace}
+\newcommand{\gamets}{\nobreak{\emph{scenarios}}\xspace}
+
+\newcommand{\qmin}{\nobreak{\emph{worst}}\xspace}
+\newcommand{\qmax}{\nobreak{\emph{best}}\xspace}
+%\newcommand{\omitted}{\nobreak{https://github.com/Qatar-Computing-Research-Institute/iAppraise}\xspace}
+\newcommand{\paco}[1]{{\color{blue}[FG]:#1}}
+\newcommand{\ahmed}[1]{{\color{brown}[A$^3$]:#1}}
+\newcommand{\irina}[1]{{\color{violet}[IT]:#1}}
+\newcommand{\hassan}[1]{{\color{green}[HS]:#1}}
+\newcommand{\stephan}[1]{{\color{gray}[SV]:#1}}
+\newcommand{\alert}[1]{{\color{note}[!!!!]:#1}}
+
+%%% MT metrics and variants
+\newcommand{\qcri}{\nobreak{DR}}
+\newcommand{\qcril}{\nobreak{DR-{\sc lex}}}
+\newcommand{\drLEXe}{\nobreak{DR-{\sc lex}$_e$}}
+\newcommand{\sqcri}{\nobreak{\sc dr}}
+\newcommand{\sqcril}{\nobreak{\sc dr-{\scriptsize lex}}}
+\newcommand{\full}{\nobreak{\emph{full}}}
+\newcommand{\nor}{\nobreak{\emph{no\_rel}}}
+\newcommand{\non}{\nobreak{\emph{no\_nuc}}}
+\newcommand{\nonr}{\nobreak{\emph{no\_nuc \& no\_rel}}}
+\newcommand{\nostr}{\nobreak{\emph{no\_discourse}}}
+
+\newcommand{\dummy}{\nobreak{\emph{dummy}\hspace{3pt}}}
+
+% DR-based individual metrics
+\newcommand{\drLEX}{\nobreak{DR-{\sc lex}$_{1}$}}
+\newcommand{\dr}{\nobreak{DR-{\sc nolex}}}
+\newcommand{\drLEXto}{\nobreak{DR-{\sc lex}$_{2}$}}
+\newcommand{\drLEXoo}{\nobreak{DR-{\sc lex}$_{1.1}$}}
+\newcommand{\drLEXot}{\nobreak{DR-{\sc lex}$_{1.2}$}}
+%\newcommand{\drLEXtt}{\nobreak{DR-{\sc lex}$_{2.1}$}}
+
+% DiscoTK metrics
+\newcommand{\disco}{\nobreak{DiscoTK}}
+\newcommand{\discolight}{\nobreak{{\sc DiscoTK}$_{light}$}}
+\newcommand{\discoparty}{\nobreak{{\sc DiscoTK}$_{party}$}}
+%
+
+%\newcommand{\sqcri}{\nobreak{\sc dr}}
+%\newcommand{\sqcril}{\nobreak{\sc dr-{}$}}
+%
+\newcommand{\spede}{\nobreak{\sc spede07pP}}
+\newcommand{\sempos}{\nobreak{SEMPOS}}
+\newcommand{\amber}{\nobreak{AMBER}}
+\newcommand{\meteor}{\nobreak{\sc Meteor}}
+\newcommand{\terrorcat}{\nobreak{\sc TerrorCat}}
+\newcommand{\simpbleu}{\nobreak{SIMPBLEU}}
+\newcommand{\ter}{\nobreak{TER}}
+\newcommand{\bleu}{\nobreak{BLEU}}
+\newcommand{\posf}{\nobreak{\sc posF}}
+\newcommand{\block}{\nobreak{\sc BlockErrCats}}
+\newcommand{\sblock}{\nobreak{\sc BEC}}
+\newcommand{\word}{\nobreak{\sc WordBlockEC}}
+\newcommand{\sword}{\nobreak{\sc WBEC}}
+\newcommand{\xen}{\nobreak{\sc XEnErrCats}}
+\newcommand{\sxen}{\nobreak{\sc XEEC}}
+\newcommand{\sagan}{\nobreak{\sc SAGAN-STS}}
+%%%
+\newcommand{\nist}{\nobreak{NIST}}
+\newcommand{\rouge}{\nobreak{\sc Rouge}}
+%%%
+\newcommand{\asiyaall}{\nobreak{Asiya-{\sc all}}}
+\newcommand{\asiyaix}{\nobreak{Asiya-{\sc 0809}}}
+\newcommand{\lex}{\nobreak{Asiya-{\sc lex}}}
+\newcommand{\syn}{\nobreak{Asiya-{\sc syn}}}
+\newcommand{\srl}{\nobreak{Asiya-{\sc srl}}}
+\newcommand{\dis}{\nobreak{Asiya-{\sc sem}}}
+
+%%% tools
+\newcommand{\asiya}{\nobreak{\sc Asiya}}
+
+%%% language pairs
+\newcommand{\csen}{\nobreak{\sc cs-en}}
+\newcommand{\deen}{\nobreak{\sc de-en}}
+\newcommand{\esen}{\nobreak{\sc es-en}}
+\newcommand{\fren}{\nobreak{\sc fr-en}}
+\newcommand{\ruen}{\nobreak{\sc fr-en}}
+
+%%% corpora
+\newcommand{\wmt}{\nobreak{\sc wmt}}
+\newcommand{\wmte}{\nobreak{\sc wmt11}}
+\newcommand{\wmtt}{\nobreak{\sc wmt12}}
+\newcommand{\wmth}{\nobreak{\sc wmt13}}
+\newcommand{\wmtf}{\nobreak{\sc wmt14}}
+
+%%% inline lists
+\newcommand{\Ni}{({\em i})~}
+\newcommand{\Nii}{({\em ii})~}
+\newcommand{\Niii}{({\em iii})~}
+\newcommand{\Niv}{({\em iv})~}
+\newcommand{\Nv}{({\em v})~}
+\newcommand{\Na}{({\em a})~}
+\newcommand{\Nb}{({\em b})~}
+\newcommand{\Nc}{({\em c})~}

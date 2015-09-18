@@ -1,0 +1,105 @@
+%!TEX root = main.tex
+
+% Irina's notes: merge somehow:
+%A large variety of automatic metrics, semi-automatic (or human-in-the-loop) and human judgements for machine translation evaluation exist \cite{Dorr2011}.
+%Although human judgements have a number of limitations, and are trying to be replaced by automatic, or semi-automatic metrics, they continue to be used mostly due to the fact that translations are produced for human readers. \cite{Dorr2011}.
+%Two kinds of human judgements are mostly taken into account: MT output \emph{fluency} and \emph{adequacy}. While \emph{fluency} requires that a speaker fluent in the target language reads the MT output and determines whether it is fluent, \emph{adequacy} requires that a speaker fluent both in the source language and in the target language determines whether all the meaning of the source text has been transferred to the target language \cite{Dorr2011}. 
+%The limitations of human judgements include: difficulty to find evaluators, high cost; lack of repeatability; slowness of evaluation; subjectivity; evaluators' opinions influenceable by their knowledge of the topic of the text; by their experience as translators/evaluators; by their familiarity with the system layout; etc.
+%In addition to that there were already several attempts to discuss the necessity of having bilingual evaluators. As they need to speak both the source and the target language fluently, they are more difficult, as well as more expensive to recruit than monolingual evaluators. For the moment, the use of bilingual evaluators is still considered as gold standard \cite{Dorr2011}. While monolingual evaluators are sometimes used for MT evaluation when supplied with reference translations \cite{Dorr2011}.
+%In this paper, we focus in analyzing different aspect of the process of MT human evaluation using \eye information.
+
+Previous work on human evaluation has focused on various aspects of the evaluation process ranging from 
+categorization of the possible scenarios \cite{Sanders2011} to the effectiveness of the evaluation criteria \cite{callisonburch-EtAl:2007:WMT}. 
+%
+%In the past, researchers have proposed different methods to assess the quality of a translation, such as the direct evaluation of \emph{adequacy} and \emph{fluency}, and the ranking-based evaluation \cite{vilar-EtAl:2007:WMT,callisonburch-EtAl:2007:WMT}. Unfortunately, humans have a hard time assigning an absolute score to a translation, and in major MT evaluations, absolute scores were phased out in favor of ranking-based evaluations or task-based evaluations (e.g. HTER). It has been shown that using such ranking-based assessments yields much higher inter-annotator agreement \cite{callisonburch-EtAl:2007:WMT}. 
+%
+\newcite{callisonburch-EtAl:2007:WMT} define several criteria to evaluate the effectiveness of a MT evaluation task:
+\Ni The \emph{ease} with which humans are able to perform the task; \Nii the \emph{agreement} with respect to other annotators; and \Niii the \emph{speed} with which annotations can be collected. %They assessed three different ways of evaluating sentences:
+
+%\newcite{callisonburch-EtAl:2007:WMT} 
+
+Based on those criteria they recommended that evaluations should be done in the form of ranking translations against each other  instead of assigning absolute scores to individual translation because ranking is easier to perform, can be done faster, and produces evaluations with higher levels of inter-annotator agreement. 
+%Yet, no specific criteria to consider when evaluating a translation were provided. 
+%, and annotators have different criteria of what makes a \emph{good} or a \emph{bad} translation.  
+%Instead, 
+%Furthermore, 
+As a result, recent WMT evaluations have adopted this evaluation-by-ranking approach and instructions are \emph{kept minimal} by only asking the evaluator to rank hypotheses from worst to best \cite{Bojar2011}.
+
+%However, even in ranking-based tasks, annotators have different criteria of what makes a \emph{good} or a \emph{bad} translation. 
+%This is often determined by their background or level of experience and can determine the performance of an evaluator, as well as undermine the quality of the evaluation.
+%
+
+%1. Assigning scores according to a five-point scale for adequacy and fluency. % following the guidelines described in \cite{LDC2005},
+%2. Ranking hypotheses relative to other's. %quality from best to worst.
+%3. Ranking the translations of selected \emph{syntactic constituents} drawn from the source sentence.
+%
+%According to \new/cite{callisonburch-EtAl:2007:WMT}, there are several criteria that define the MT evaluation task:
+%\Ni The \emph{ease} with which humans are able to perform the task; \Nii the agreement w.r.t. other annotators, and the \emph{speed} with which annotations can be collected.
+%
+%In their observations, people had a hard time distinguishing between the \emph{fluency} and \emph{adequacy} aspects of a translation, and found that there is a high correlation between both scores. Furthermore, the lack of clear guidelines further complicates the assessment (e.g. how is \emph{meaning} quantified, how do grammatical errors affect different levels of fluency). Therefore, \newcite{callisonburch-EtAl:2007:WMT} point out that each annotator develops their own rules of thumb.
+%By asking annotators to rank the hypotheses, the task was simplified considerably, and inter-annotator agreement increased. Furthermore, when asked to rank only constituents, additional improvements were observed.
+%In terms of time, ranking constituents reduced the evaluation time to about 11 seconds on average, when compared to 26 seconds on average for the full hypothesis. Note however, that the times were not normalized by the number of words in the hypothesis/constituent. In summary, 
+
+In this work, we consider the three criteria proposed by \newcite{callisonburch-EtAl:2007:WMT}: \emph{ease}, \emph{agreement} and \emph{speed}; but with a few differences. Regarding \emph{ease}, instructions are kept minimal, and the evaluation criteria is left to the evaluator to decide (or discover). Furthermore, by framing the evaluation as a game we aim to keep participants engaged, and make the evaluation task easier. %,  and providing feedback on their performance based on other human annotations.
+With respect to the other two criteria, we use them to analyze two different aspects of the evaluation process: the sources of information available to the evaluator, and the background of the evaluator. 
+
+%as much as possible we add \eye to human evaluation and analyze the criteria defined by \newcite{callisonburch-EtAl:2007:WMT} (ease, agreement and speed). The motivation behind using \eye to extract information about how users conduct evaluation is helping to better understand the process and therefore allow to %We design the evaluation process in a way that 
+%improves evaluators engagement and reduce the bias in the process of evaluating a translation.
+%compares various type of evaluators (monolingual, bilingual) w.r.t different information scenarios. We show that \eye helps to .... \hassan{a few words from discussion}  
+%Currently, there the standard mode of operation is...
+
+% However, we rarely question our assumptions about the task.
+
+
+%\paco{The motivation behind using eye-tracking to extract information on how users evaluate a translation. Intuitively, we would like to use that information to reduce the bias in the process of evaluating a translation.}
+
+%As mentioned before, there are two main challenges when presenting an evaluation task: \Ni how to make the task \emph{less} tedious, i.e. increasing engagement, to preserve the user's focus;  and \Nii how to develop consistent guidelines to increase inter-annotator agreement. For \Ni, \cite{doherty2010eye} proposed to have a comprehension questionnaire aimed to encourage the user's focus retention, while for \Nii, ranking tasks have been proposed. 
+%Instead, here we propose a evaluation as a game, in which users have to build their own strategies to mimic the evaluation of an \emph{expert} translator. This serves to both purposes: to keep the users engaged by immediately given feedback after each evaluation; and to train users to develop consistent strategies that mimic a \emph{gold standard}.
+
+Eye-tracking has been previously used in MT evaluation research for different purposes. 
+%
+%
+%~\cite{stymne2012eye,carl2012translog,alabau2014casmacat,doherty2014assessing,doherty2010eye}. 
+% The work of \cite{doherty2010eye}, Stymne et al.~\shortcite{stymne2012eye}, and Doherty and O'Brien~\shortcite{doherty2014assessing} are most relevant to us.
+%
+%
+\newcite{doherty2010eye} used \eye to
+%the Tobii 1750 eye-tracker. 10 native speakers of French were asked to read and 
+%
+evaluate the comprehensibility of machine translation output in French, by asking native speakers to read MT output. 
+%
+%of French. 
+% to read previously evaluated by human evaluators 25 well-translated sentences and 25 poorly translated sentences.
+%50 sentences, translated by an automatic machine translation system into French. 25 of the sentences were rated as excellent in previous human rating, and 25 - as poor. 
+%Four eye-tracking variables were used: 1) gaze time; 2) fixations count; 3) pupil dilation; and 4) average fixation duration. 
+%
+%
+They found that eye-tracking data 
+%(specifically gaze time and fixation count)
+had a slight correlation with HTER scores. 
+
+\newcite{stymne2012eye} applied eye-tracking to machine translation error analysis. 
+%
+%
+%33 university students were asked to read the text outputs of three machine translation systems, along with a human-produced text, and evaluate the text quality. 
+%Eye-tracking was recorded using SMI Remote Eye iView, and the following variables were recorded: 1) average gaze time and 2) fixations count. 
+%
+%
+They found that longer gaze time and and a higher number of fixations correlate with high number of errors in the MT output. 
+%
+% rather than on correct parts, as well as differences in eye-tracking data for different types of MT errors. The study concluded that eye-tracking could be used as a complementary information to MT error analysis.
+Doherty and O'Brien~\shortcite{doherty2014assessing} used eye-tracking to evaluate the quality of raw machine translation output in terms of its \emph{usability} by an end user. 
+%
+%
+%In order to achieve this, an online service documentation was translated using Google Translate, and 30 participants were asked to read the documentation. 
+%, and perform tasks, based on this documentation. An eye-tracking tool, Tobii 1750, was used to record the eye-movements of the participants while reading the documentation and executing the tasks in order to measure the cognitive effort involved in processing the documentation. The following eye-tracking variables were used: 1) fixations count; and 2) average fixation duration. 
+%
+%
+They concluded that eye-tracking correlates well with the other measures which they used for their study. 
+In this work, we use \eye to observe which sources of information evaluators use while performing an MT evaluation task and how this impacts the task completion time and the consistency in their judgements.
+ 
+%We use this information to learn where do evaluators look.
+%None of the previous work described the eye moving behavior of people performing the machine translation evaluation task. 
+
+
+
