@@ -1,24 +1,29 @@
-# iAppraise
+# Data and source code for Guzman et al. WMT2015
+
+
+This repository contains the data gathered through experimentation, and the analysis performed for our paper.  We also include the sources for our paper, and presentation.
 
 CONTENT:
 ========
 README.md: this file.
 
-Appraise
-=========
-https://github.com/Qatar-Computing-Research-Institute/iAppraise
 
 data
 =====
-exported-tasks-aabdelali-2014-11-25.ver4.xml
+exported-tasks-2014-11-25.ver4.xml (raw data)
+data-4.1+trans.dat (preprocessed data)
+wmt12.RNK_results.filtered.human.noties (human eval scores)
+wmt12.spanish_quality (translations selected based on their quality)
 
-results
+analysis
 ========
-data-4+trans+seqs+transit+fixations.dat
+lib.R                (general R functions)
+wmt15_time_final.R 	 (code for reproducing analysis)
 
-scripts
-========
-python parse-v3+trans+seqs+transit+fixations.py exported-tasks-aabdelali-2014-11-25.ver4.xml > ../results/data-4+trans+seqs+transit+fixations.dat
+
+
+
+
 
 Related publications
 ====================
